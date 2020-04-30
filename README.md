@@ -1,26 +1,60 @@
-## js-application-alert-message
+# JS Application Alert Message
 
-This is where you include your WebPart documentation.
+## Summary
+> This application customizer will display the alert message based on the items from the list. The list items are filtered based on the '**IsActive**','**StartDate**' and '**ExpiryDate**'. The messages were displayed at the 'Top' placeholder with an animation effect.
 
-### Building the code
+## Pre-requisites
+> Create a custom list with a name '**Alerts**' and with the fields. Maintain the **_field names_** as mentioned below and all the fields are **_mandatory_**.
+* **Title** - Default title field with the type '**Single line of Text**'
+* StartDate - '**Datetime**' field with date only option.
+* ExpiryDate - '**Datetime**' field with date only option.
+* IsActive - '**Yes or No**' field with the default set to Yes.
+* Sequence - '**Number**' field with no decimals.
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
+## Properties
 
-This package produces the following:
+* **_animationType_**: Animation effect based on the type. Follow this [Animate.css](https://daneden.github.io/animate.css/) for different animation effects.
 
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
+### _Note_
+* Used PnPJS library for fetching the items from the '**Alerts**' list.
 
-### Build options
+## Preview
+![JS-Application-Alert-Message](./assets/GlobalAlerts.gif)
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+## Used SharePoint Framework Version 
+![drop](https://img.shields.io/badge/version-GA-green.svg)
+
+## Applies to
+
+* [SharePoint Framework](https:/dev.office.com/sharepoint)
+* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+
+## Prerequisites
+ 
+> **@microsoft/generator-sharepoint - 1.10.0**
+
+## Solution
+
+Solution|Author(s)
+--------|---------
+js-application-alert-message | Sudharsan K.([@sudharsank](https://twitter.com/sudharsank), [Know More](http://windowssharepointserver.blogspot.com/))
+
+## Version history
+
+Version|Date|Comments
+-------|----|--------
+1.0.0.0|Apr 30 2020|Initial release
+
+## Disclaimer
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+## Minimal Path to Awesome
+
+- Clone this repository
+- in the command line run:
+  - `npm install`
+  - `gulp bundle --ship && gulp package-solution --ship`
+- Add the .sppkg file to the app catalog and add the **'_Quick Poll_'** web part to the page.
+
+#### Local Mode
+This solution doesn't work on local mode.
