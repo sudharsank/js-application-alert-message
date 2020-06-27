@@ -5,6 +5,6 @@
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="6ba4b6c1-ee22-421f-97d9-d2bad0a4cc57"
         ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}"
-        HostProperties="{&quot;preAllocatedApplicationCustomizerTopHeight&quot;:&quot;50&quot;}">
+        HostProperties="{&quot;preAllocatedApplicationCustomizerTopHeight&quot;:&quot;35&quot;}">
     </CustomAction>
 </Elements>
