@@ -47,10 +47,12 @@ export interface IAlertsProps {
     animationType: string;
     animationDelay: number;
     alertBackgroundColor: string;
+    textColor: string;
 }
 
 export default function (props: IAlertsProps) {
     let bgColor: string = props.alertBackgroundColor ? props.alertBackgroundColor : 'red';
+    let textColor: string = props.textColor ? props.textColor : 'white';
     const [alerts, setAlerts] = React.useState<string>('');
     const [showAlerts, setShowAlerts] = React.useState<boolean>(false);
     const _startAlertAnimation = () => {
@@ -99,7 +101,7 @@ export default function (props: IAlertsProps) {
     return (
         <>
             {alerts.length > 0 &&
-                <div className={css("ms-Grid-row", styles.alertContainer)} style={{ backgroundColor: bgColor }}>
+                <div className={css("ms-Grid-row", styles.alertContainer)} style={{ backgroundColor: bgColor, color: textColor }}>
                     {showAlerts &&
                         <span id="alertMessage">{alerts}</span>
                     }

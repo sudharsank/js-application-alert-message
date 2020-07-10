@@ -21,6 +21,7 @@ export interface IGlobalAlertsApplicationCustomizerProperties {
     animationType: string;
     animationDelay: number;
     alertBackgroundColor: string;
+    textColor: string;
 }
 
 /** A Custom Action which can be run during execution of a Client Side Application */
