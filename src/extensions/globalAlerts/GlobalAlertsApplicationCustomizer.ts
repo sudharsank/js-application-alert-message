@@ -44,7 +44,8 @@ export default class GlobalAlertsApplicationCustomizer
                 const elem: React.ReactElement<IAlertsProps> = React.createElement(Alerts, {
                     animationType: this.properties.animationType,
                     animationDelay: this.properties.animationDelay,
-                    alertBackgroundColor: this.properties.alertBackgroundColor
+                    alertBackgroundColor: this.properties.alertBackgroundColor,
+                    textColor: this.properties.textColor
                 });
                 ReactDOM.render(elem, this._topPlaceholder.domElement);
             }
